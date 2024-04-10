@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+<h1>ARCHIVE</h1>
 
 <section class="archive-container">
 	<?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>
@@ -13,10 +13,6 @@
                         </p>
                 </div>
 
-                <div class="archive-d">
-                <?php the_post_thumbnail('custom-size');?>
-                </div>
-
                 <div class="archive-b">                
       		            <?php the_excerpt(); ?>  
       		            <p>
@@ -28,5 +24,5 @@
  
 	<?php endwhile; endif; ?>
 </section>
-
+<h1>ARCHIVE</h1>
 <?php get_footer(); ?>

@@ -1,23 +1,25 @@
 <?php get_header(); ?>
-<h1>FRONT</h1>
 
-<section class="front">
-    <div class="front-article">
-        
+
+<div class="front">
+    <div class="front-a">
+        <div class="front-article">        
                 <?php if( have_posts() ) : while( have_posts() ) : the_post(); ?>  
 
-             
-                        <h1><?php /*the_title();*/ ?></h1> 
-
+                    <div class="article">
+                     
+              
                         <?php the_content(); ?>                 
-
+                    </div>
                 <?php endwhile; endif; ?>
         </div>  
-       <div classe="carte">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/img/carte.png" alt="Carte Thés">
-       </div>
-    </div> 
+    </div>
+        <div class="front-carte">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/img/carte.png" alt="Carte Thés">
+        </div>
+       
+   
 
-</section>
-
+</div>
+<h1>FRONT</h1>
 <?php get_footer(); ?>
